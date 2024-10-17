@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="styles.css"> 
+</head>
+<body>
+    <div class="topnav">
+        <a href="index.html">Home</a>
+        <a href="news.html">News</a>
+        <a href="attractions.html">Attractions</a>
+        <a href="history.html">History</a>
+        <a class="active" href="contact.html">Contact</a>
+    </div>
+
+    <main>
+        <h1>Contact us</h1>
+        <p>Phone: +48 123 456 789</p>
+        <p>Email: <a href="mailto:wroclawforu@gmail.com">wroclawforu@gmail.com</a></p>
+        <p>Address: <strong>ul. Jesienna 10, 53-123 Wroclaw</strong></p>
+
+        <h2>What do we do?</h2>
+        <ul>
+            <li>Citizens support</li>
+            <li>Tourist support
+                <ul>
+                    <li>Tourist information</li>
+                    <li>City tours</li>
+                </ul>
+            </li>
+            <li>City events organization</li>
+        </ul>
+
+        <h2>Opening hours</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Day</th>
+                    <th>Hours</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Monday - Friday</td>
+                    <td>8:00 - 18:00</td>
+                </tr>
+                <tr>
+                    <td>Saturday</td>
+                    <td>10:00 - 14:00</td>
+                </tr>
+                <tr>
+                    <td colspan="2">Sunday - closed</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <h2>Contact form</h2>
+        <form action="submit_form.php" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="subject">Subject:</label><br>
+            <input type="text" id="subject" name="subject"><br><br>
+
+            <label for="inquiry">Rodzaj zapytania:</label><br>
+            <select id="inquiry" name="inquiry">
+                <option value="general">General</option>
+                <option value="technical">Tourist information</option>
+                <option value="support">Citizen Support</option>
+            </select><br><br>
+
+            <label>Are you currently living in Wroclaw?</label><br>
+            <input type="radio" id="citizen" name="service" value="consultation">
+            <label for="consultation">Yes</label><br>
+            <input type="radio" id="notcitizen" name="service" value="meeting">
+            <label for="meeting">No</label><br><br>
+
+            <label for="newsletter">Sign up for a newsletter:</label><br>
+            <input type="checkbox" id="newsletter" name="newsletter"><br><br>
+
+            <label for="message">Your message (max 200 characters):</label><br>
+            <textarea id="message" name="message" maxlength="200" rows="4" cols="50"></textarea><br><br>
+            
+            <button type="reset">Clear</button>
+            <button type="submit">Send</button>
+        </form>
+    </main>
+</body>
+</html>
