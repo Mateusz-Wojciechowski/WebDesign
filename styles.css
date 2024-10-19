@@ -27,7 +27,7 @@ body {
 .topnav a:hover {
     background-color: #668cff;
     color: black;
-  }
+}
 
 * {
     box-sizing: border-box; /* Ensure padding and border are included in width calculations */
