@@ -40,14 +40,11 @@ main {
     width: 90%;
     border-radius: 8px;
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-}
-
-.hover-text {
-    /* font-size: 16px; */
     transition: transform 0.1s ease;
 }
 
-.hover-text:hover {
+
+main:hover {
     transform: scale(1.05);
     /* font-size: 18px; */
 }
@@ -112,6 +109,11 @@ button {
     border: none;
     border-radius: 4px;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
 }
 
 a {
