@@ -44,11 +44,6 @@ main {
 }
 
 
-main:hover {
-    transform: scale(1.05);
-    /* font-size: 18px; */
-}
-
 main img {
     width: 100%; /* Make the image take the full width of the container */
     height: auto; /* Maintain aspect ratio */
@@ -63,7 +58,7 @@ table {
 }
 
 table, th, td {
-    border: 1px solid #ddd;
+    border: 1px solid black;
 }
 
 th, td {
@@ -77,12 +72,11 @@ th {
 }
 
 td {
-    background-color: #fafafa;
+    background-color: white;
 }
 
 td[colspan] {
     text-align: center;
-    background-color: #f9f9f9;
 }
 
 
@@ -95,7 +89,7 @@ label {
 input[type="text"], input[type="email"], textarea, select {
     width: 100%;
     padding: 12px;
-    border: 1px solid #ccc;
+    border: 1px solid;
     border-radius: 4px;
     box-sizing: border-box;
     margin-bottom: 16px;
@@ -121,11 +115,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
-
-
 ul, ol {
     margin: 10px 0;
     padding-left: 20px;
@@ -139,16 +128,6 @@ ul li {
     margin-bottom: 8px;
 }
 
-@media (max-width: 768px) {
-    main {
-        width: 95%;
-    }
-
-    .topnav a {
-        padding: 12px;
-        font-size: 16px;
-    }
-}
 
 
 
